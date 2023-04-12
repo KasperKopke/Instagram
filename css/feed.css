@@ -104,9 +104,12 @@
   font-size: 15px;
 }
 
+.main-feed {
+}
+
 .feed1 {
   width: 468px;
-  height: 845px;
+  height: 100%;
   border: 1px solid lightgrey;
   border-radius: 10px;
 }
@@ -197,20 +200,43 @@
 .bottom3 {
   font-size: 12px;
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 .bottom4 {
   font-size: 12px;
   margin-left: 10px;
   font-weight: 600;
   opacity: 70%;
+  margin-bottom: 10px;
 }
 .bottom5 {
   font-size: 12px;
   margin-left: 10px;
   font-weight: 100;
   opacity: 50%;
+  margin-bottom: 10px;
 }
 .footer-feed {
   border-top: 1px solid lightgrey;
   width: 100%;
+}
+.footer-feed input {
+  border: none;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.sendMessage {
+  border: none;
+  background-color: white;
+  color: #4267b2;
+  margin-left: 45%;
+}
+.footer-feed .fa-face-smile {
+  margin: 0 10px;
+}
+
+.footer-feed input::placeholder {
+  color: black;
+  font-size: 12px;
+  opacity: 60%;
 }
