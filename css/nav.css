@@ -1,0 +1,73 @@
+.main-navigation {
+  padding: 25px;
+  height: 100vh;
+  max-width: 17%;
+  border-right: 1px solid rgba(128, 128, 128, 0.473);
+}
+
+.main-navigation ul li {
+  list-style-type: none;
+  width: 100%;
+  padding: 10px;
+}
+
+.main-navigation a {
+  display: flex;
+  justify-content: flex-start;
+}
+.main-navigation ul li:hover {
+  background-color: rgb(233, 233, 233);
+  border-radius: 5px;
+}
+
+.main-navigation ul li:hover .icon {
+  transform: scale(1.1);
+  transition: all 0.1s ease-in-out;
+}
+
+.main-navigation ul li:first-child:hover {
+  background-color: rgba(211, 211, 211, 0);
+}
+
+.main-navigation ul li a {
+  color: black;
+}
+.main-navigation ul {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 11px;
+  align-items: flex-start;
+}
+.main-navigation ul li:first-child img {
+  width: 120px;
+}
+
+.main-navigation ul li:last-child {
+  margin-top: auto;
+}
+
+.main-navigation ul li:nth-child(9) img {
+  width: 30px;
+  border-radius: 50px;
+  margin-right: 11px;
+}
+
+.main-profile-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fa-house,
+.fa-magnifying-glass,
+.fa-compass,
+.fa-clapperboard,
+.fa-paper-plane,
+.fa-heart,
+.fa-square-plus,
+.fa-bars,
+.profile-pic {
+  font-size: 25px;
+  margin-right: 17px;
+}
