@@ -1,7 +1,7 @@
 .main-navigation {
   padding: 25px;
   height: 100vh;
-  max-width: 340px;
+  max-width: 320px;
 
   border-right: 1px solid rgba(128, 128, 128, 0.473);
 }

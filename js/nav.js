@@ -1,1 +1,3 @@
-export default class nav {}
+function navSearch() {
+  document.querySelector(".search").classList.toggle("showSearch");
+}
