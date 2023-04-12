@@ -1,0 +1,10 @@
+.main-feed {
+}
+.story-feed {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 250px;
+  background-color: black;
+  border: 1px solid lightgrey;
+}
