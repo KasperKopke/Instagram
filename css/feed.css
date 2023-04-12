@@ -44,6 +44,65 @@
 .username1 {
   margin-left: 4px;
 }
+.suggestions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+}
+.my-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#look {
+  color: blue;
+}
+#profile-picture {
+  width: 70px;
+  border-radius: 50%;
+  margin-right: 19px;
+}
+#small-tekts-box {
+  margin-right: 130px;
+}
+#gray {
+  color: gray;
+}
+#gray1:hover {
+  border-bottom: 1px solid gray;
+}
+#forslag {
+  display: flex;
+  margin-top: 25px;
+  gap: 220px;
+}
+#look1 {
+  color: black;
+}
+.next-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+#profile-picture1 {
+  width: 49px;
+  border-radius: 50%;
+  margin-right: 19px;
+}
+#gray1 {
+  color: gray;
+}
+#gray1:hover {
+  border-bottom: 1px solid gray;
+}
+#link-boxs {
+  margin-left: 35px;
+  margin-top: 40px;
+  font-size: 15px;
+}
 
 .feed1 {
   width: 468px;
@@ -138,4 +197,20 @@
 .bottom3 {
   font-size: 12px;
   margin-left: 10px;
+}
+.bottom4 {
+  font-size: 12px;
+  margin-left: 10px;
+  font-weight: 600;
+  opacity: 70%;
+}
+.bottom5 {
+  font-size: 12px;
+  margin-left: 10px;
+  font-weight: 100;
+  opacity: 50%;
+}
+.footer-feed {
+  border-top: 1px solid lightgrey;
+  width: 100%;
 }
