@@ -1,6 +1,7 @@
 @import url("/css/feed.css");
 @import url("/css/nav.css");
 @import url("/css/suggestions.css");
+@import url(/suggestions/css/people-list.css);
 
 * {
   margin: 0;
