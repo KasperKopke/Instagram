@@ -31,11 +31,11 @@ denne kode gør så man kan lave dark mode den ser efter om searchbtn
 indeholder classen showSearch hvis den gør skal den ændre baggrunds
 farven til sort hvis ikke så skal den være hvid
 
-if (searchbtn.classList.contains("showSearch")) {
+if (magnifyingGlass.classList.contains("showSearch")) {
     document.querySelector("body").style.backgroundColor = "#000";
   } else {
     document.querySelector("body").style.backgroundColor = "#fff";
   }
-  console.log("searchbtn");
+  console.log("magnifyingGlass");
 
-const searchbtn = document.getElementById("searchbtn");*/
+*/
