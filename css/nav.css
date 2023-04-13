@@ -151,7 +151,13 @@
   background-color: white;
   border-right: 1px solid lightgray;
   color: black;
-  min-height: 100vh;
+  position: fixed;
+  left: -100%;
+  height: 100%;
+  overflow-y: scroll;
+  z-index: 300;
+  transition: all 0.4s ease-in-out;
+  padding: 20px;
   border-radius: 0px 10px 10px 0px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -167,20 +173,13 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.notifikationer {
-  position: fixed;
-  left: -100%;
-  z-index: 300;
-  transition: all 0.4s ease-in-out;
-  padding: 20px;
-}
-
 .notifikationer article {
   margin-bottom: 20px;
 }
 
 .notifikationer.active4 {
   position: fixed;
+
   left: 100px;
   transition: all 0.4s ease-in-out;
 }
