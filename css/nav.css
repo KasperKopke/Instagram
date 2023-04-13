@@ -4,6 +4,7 @@
   width: 16%;
   max-width: 420px;
   border-right: 1px solid rgba(128, 128, 128, 0.473);
+  z-index: 301;
 }
 
 .main-navigation ul li {
@@ -107,15 +108,17 @@
 }
 
 .searchbar {
-  display: none;
+  position: fixed;
+  left: -100%;
+  z-index: 300;
+  transition: all 0.4s ease-in-out;
 }
 
-.searchbar h2 {
-  padding: 20px;
-  font-weight: 500;
-  margin-bottom: 20px;
+.searchbar.active3 {
+  position: fixed;
+  left: 100px;
+  transition: all 0.4s ease-in-out;
 }
-
 .searchbar input {
   height: 38px;
   width: 90%;
@@ -128,7 +131,11 @@
   border: none;
   background-color: rgba(211, 211, 211, 0.438);
 }
-
+.searchbar h2 {
+  padding: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
 .searchbar h3 {
   padding: 20px;
   font-weight: 600;
@@ -137,4 +144,78 @@
 
 .nav-features {
   width: 24%;
+}
+
+.notifikationer {
+  display: block;
+  background-color: white;
+  border-right: 1px solid lightgray;
+  color: black;
+  min-height: 100vh;
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.notifikationer.active4 {
+  display: block;
+  background-color: white;
+  border-right: 1px solid lightgray;
+  color: black;
+  min-width: 360px;
+  min-height: 100vh;
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.notifikationer {
+  position: fixed;
+  left: -100%;
+  z-index: 300;
+  transition: all 0.4s ease-in-out;
+  padding: 20px;
+}
+
+.notifikationer article {
+  margin-bottom: 20px;
+}
+
+.notifikationer.active4 {
+  position: fixed;
+  left: 100px;
+  transition: all 0.4s ease-in-out;
+}
+
+.notifikationer h2 {
+  padding: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.notifikationer h3 {
+  padding: 20px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.notifikationer img {
+  width: 50px;
+  border-radius: 50px;
+}
+
+.noti-profil-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.daguge {
+  color: rgb(136, 136, 136);
+}
+
+.followbtn a {
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+
+  padding: 7px 18px;
+  background-color: rgb(105, 105, 255);
 }
