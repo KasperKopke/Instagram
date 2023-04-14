@@ -52,6 +52,24 @@ function notifikationer() {
   }
 }
 
+function opret() {
+  const opretKnap = document.querySelector(".opret-nyt-opslag");
+  opretKnap.classList.add("opretBoxShow");
+
+  const kryds = document.querySelector(".fa-x");
+
+  kryds.addEventListener("click", (data) => {
+    opretKnap.classList.remove("opretBoxShow");
+  });
+
+  opretKnap.addEventListener("click", (data) => {
+    console.log(data.target);
+    if (data.target.classList.contains("opretBoxShow")) {
+      opretKnap.classList.remove("opretBoxShow");
+    }
+  });
+}
+
 /*
 denne kode gør så man kan lave dark mode den ser efter om searchbtn 
 indeholder classen showSearch hvis den gør skal den ændre baggrunds
