@@ -2,6 +2,7 @@
 @import url("/css/nav.css");
 @import url("/css/suggestions.css");
 @import url(/suggestions/css/people-list.css);
+@import url(/udforsk/udforsk.css);
 
 * {
   margin: 0;
