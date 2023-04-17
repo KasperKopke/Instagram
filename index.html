@@ -10,11 +10,59 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="/css/main.css" />
-
-    <script src="/js/main.js" defer></script>
+    <script src="/js/feed.js" defer></script>
   </head>
   <body>
     <section class="main">
+      <div onclick="hideFunction()" class="hide-function">
+        <div class="function-ellipsis">
+          <ul>
+            <div class="report">
+              <li>
+                <a>Anmeld</a>
+              </li>
+            </div>
+
+            <div class="dont-Follow">
+              <li><a>Følg ikke længere</a></li>
+            </div>
+            <div class="the-rest">
+              <li><a>Føj til favoritter</a></li>
+            </div>
+            <div class="the-rest">
+              <li>
+                <a>Gå til opslag</a>
+              </li>
+            </div>
+            <div class="the-rest">
+              <li>
+                <a>Del her:</a>
+              </li>
+            </div>
+            <div class="the-rest">
+              <li>
+                <a>Kopiér link</a>
+              </li>
+            </div>
+            <div class="the-rest">
+              <li>
+                <a>Indlejr</a>
+              </li>
+            </div>
+            <div class="the-rest">
+              <li>
+                <a>Om denne konto</a>
+              </li>
+            </div>
+            <div class="the-rest7">
+              <li>
+                <a>Annuler</a>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+
       <nav class="story-feed">
         <div class="story-wrapper">
           <div class="profile-pic">
@@ -153,6 +201,7 @@
           >
         </div>
       </section>
+
       <section class="main-feed">
         <div class="feed1">
           <div class="topFeed1">
@@ -165,7 +214,8 @@
               </p>
               <p class="Location1">Spain</p>
             </div>
-            <i class="fa-solid fa-ellipsis"></i>
+
+            <i onclick="myfunctoin()" class="fa-solid fa-ellipsis"></i>
           </div>
           <div class="mainFeed1">
             <img src="https://picsum.photos/seed/picsum/466/600" alt="" />
@@ -174,7 +224,9 @@
             <section class="bottom1">
               <ul>
                 <li>
-                  <a href="#"><i class="fa-regular fa-heart"></i></a>
+                  <a href="#"
+                    ><i id="fa-heart" class="fa-regular fa-heart"></i
+                  ></a>
                 </li>
                 <li>
                   <a href="#"> <i class="fa-regular fa-comment"></i></a>
@@ -201,9 +253,52 @@
               </div>
               <p class="bottom2txt">
                 Synes godt om fra
-                <a href="#"> <span class="bold">Username123</span></a> og
+
+                <a onmouseenter="showHover()" class="username123" href="#">
+                  <span class="bold">Username123</span></a
+                >
+                og
                 <a href="#"> <span class="bold">5.321 andre</span></a>
               </p>
+              <div onmouseleave="hideHover()" class="username123Hover">
+                <div class="top-hover1">
+                  <img src="https://picsum.photos/seed/picsum/50/50" alt="" />
+                  <div class="top-hover">
+                    <p>Username123</p>
+                    <p>Username Lastname</p>
+                    <p>https://username123.google.com</p>
+                    <p>Følges af Username1 og 5 andre</p>
+                  </div>
+                </div>
+                <div class="mid-hover1">
+                  <div class="mid-hover">
+                    <p>523</p>
+                    <p>opslag</p>
+                    <img
+                      src="https://picsum.photos/seed/picsum/100/100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="mid-hover">
+                    <p>523</p>
+                    <p>følgere</p>
+                    <img
+                      src="https://picsum.photos/seed/picsum/100/100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="mid-hover">
+                    <p>523</p>
+                    <p>fulgte</p>
+                    <img
+                      src="https://picsum.photos/seed/picsum/100/100"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <button class="hover-button">Besked</button
+                ><button class="hover-button">Følger</button>
+              </div>
             </section>
             <section class="bottom3">
               <p>
@@ -215,6 +310,310 @@
             <section class="bottom4">
               <a href=""> <p class="kursiv">Vis alle 38 kommentarer</p></a>
             </section>
+
+            <div class="comment-show active">
+              <div class="comment-img">
+                <img src="https://picsum.photos/seed/picsum/800/500" alt="" />
+              </div>
+              <section class="comment-section">
+                <div class="top-comment">
+                  <img src="https://picsum.photos/seed/picsum/50/50" alt="" />
+                  <p>Username001</p>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+              </section>
+            </div>
+
+            <section class="bottom5"><p>For 1 dag siden</p></section>
+          </div>
+          <div class="footerFeed1">
+            <div class="footer-feed">
+              <form
+                method="get"
+                action="/"
+                id="signUpForm"
+                onsubmit="return(validate())"
+              >
+                <a href=""> <i class="fa-regular fa-face-smile"></i></a>
+                <label for="">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Tilføj en kommentar..." /></label
+                ><button class="sendMessage">Slå op</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-feed2">
+        <div class="feed1">
+          <div class="topFeed1">
+            <div class="circleFeed1">
+              <img src="https://picsum.photos/seed/picsum/28/28" alt="" />
+            </div>
+            <div class="topUsername1">
+              <p class="User1">
+                Username1 <i class="fa-regular fa-circle-check"></i>
+              </p>
+              <p class="Location1">Spain</p>
+            </div>
+
+            <i onclick="myfunctoin()" class="fa-solid fa-ellipsis"></i>
+          </div>
+          <div class="mainFeed1">
+            <img src="https://picsum.photos/seed/picsum/466/600" alt="" />
+          </div>
+          <div class="bottomFeed1">
+            <section class="bottom1">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i id="fa-heart" class="fa-regular fa-heart"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"> <i class="fa-regular fa-comment"></i></a>
+                </li>
+                <li>
+                  <a href="#"> <i class="fa-regular fa-paper-plane"></i></a>
+                </li>
+                <li>
+                  <a href="#"> <i class="fa-regular fa-bookmark"></i></a>
+                </li>
+              </ul>
+            </section>
+            <section class="bottom2">
+              <div class="merging-pictures">
+                <img
+                  class="merging-picture1"
+                  src="https://picsum.photos/seed/picsum/15/15"
+                  alt=""
+                /><img
+                  class="merging-picture2"
+                  src="https://picsum.photos/seed/picsum/15/15"
+                  alt=""
+                />
+              </div>
+              <p class="bottom2txt">
+                Synes godt om fra
+
+                <a onmouseenter="showHover()" class="username123" href="#">
+                  <span class="bold">Username123</span></a
+                >
+                og
+                <a href="#"> <span class="bold">5.321 andre</span></a>
+              </p>
+              <div onmouseleave="hideHover()" class="username123Hover">
+                <div class="top-hover1">
+                  <img src="https://picsum.photos/seed/picsum/50/50" alt="" />
+                  <div class="top-hover">
+                    <p>Username123</p>
+                    <p>Username Lastname</p>
+                    <p>https://username123.google.com</p>
+                    <p>Følges af Username1 og 5 andre</p>
+                  </div>
+                </div>
+                <div class="mid-hover1">
+                  <div class="mid-hover">
+                    <p>523</p>
+                    <p>opslag</p>
+                    <img
+                      src="https://picsum.photos/seed/picsum/100/100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="mid-hover">
+                    <p>523</p>
+                    <p>følgere</p>
+                    <img
+                      src="https://picsum.photos/seed/picsum/100/100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="mid-hover">
+                    <p>523</p>
+                    <p>fulgte</p>
+                    <img
+                      src="https://picsum.photos/seed/picsum/100/100"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <button class="hover-button">Besked</button
+                ><button class="hover-button">Følger</button>
+              </div>
+            </section>
+            <section class="bottom3">
+              <p>
+                <a href="#"><span class="bold">Username123</span></a>
+                Halløjsovs.
+                <a href="#"> @viaplaydanmark</a>
+              </p>
+            </section>
+            <section class="bottom4">
+              <a href=""> <p class="kursiv">Vis alle 38 kommentarer</p></a>
+            </section>
+
+            <div class="comment-show active">
+              <div class="comment-img">
+                <img src="https://picsum.photos/seed/picsum/800/500" alt="" />
+              </div>
+              <section class="comment-section">
+                <div class="top-comment">
+                  <img src="https://picsum.photos/seed/picsum/50/50" alt="" />
+                  <p>Username001</p>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+              </section>
+            </div>
+
+            <section class="bottom5"><p>For 1 dag siden</p></section>
+          </div>
+          <div class="footerFeed1">
+            <div class="footer-feed">
+              <form
+                method="get"
+                action="/"
+                id="signUpForm"
+                onsubmit="return(validate())"
+              >
+                <a href=""> <i class="fa-regular fa-face-smile"></i></a>
+                <label for="">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Tilføj en kommentar..." /></label
+                ><button class="sendMessage">Slå op</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-feed3">
+        <div class="feed1">
+          <div class="topFeed1">
+            <div class="circleFeed1">
+              <img src="https://picsum.photos/seed/picsum/28/28" alt="" />
+            </div>
+            <div class="topUsername1">
+              <p class="User1">
+                Username1 <i class="fa-regular fa-circle-check"></i>
+              </p>
+              <p class="Location1">Spain</p>
+            </div>
+
+            <i onclick="myfunctoin()" class="fa-solid fa-ellipsis"></i>
+          </div>
+          <div class="mainFeed1">
+            <img src="https://picsum.photos/seed/picsum/466/600" alt="" />
+          </div>
+          <div class="bottomFeed1">
+            <section class="bottom1">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i id="fa-heart" class="fa-regular fa-heart"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"> <i class="fa-regular fa-comment"></i></a>
+                </li>
+                <li>
+                  <a href="#"> <i class="fa-regular fa-paper-plane"></i></a>
+                </li>
+                <li>
+                  <a href="#"> <i class="fa-regular fa-bookmark"></i></a>
+                </li>
+              </ul>
+            </section>
+            <section class="bottom2">
+              <div class="merging-pictures">
+                <img
+                  class="merging-picture1"
+                  src="https://picsum.photos/seed/picsum/15/15"
+                  alt=""
+                /><img
+                  class="merging-picture2"
+                  src="https://picsum.photos/seed/picsum/15/15"
+                  alt=""
+                />
+              </div>
+              <p class="bottom2txt">
+                Synes godt om fra
+
+                <a onmouseenter="showHover()" class="username123" href="#">
+                  <span class="bold">Username123</span></a
+                >
+                og
+                <a href="#"> <span class="bold">5.321 andre</span></a>
+              </p>
+              <div onmouseleave="hideHover()" class="username123Hover">
+                <div class="top-hover1">
+                  <img src="https://picsum.photos/seed/picsum/50/50" alt="" />
+                  <div class="top-hover">
+                    <p>Username123</p>
+                    <p>Username Lastname</p>
+                    <p>https://username123.google.com</p>
+                    <p>Følges af Username1 og 5 andre</p>
+                  </div>
+                </div>
+                <div class="mid-hover1">
+                  <div class="mid-hover">
+                    <p>523</p>
+                    <p>opslag</p>
+                    <img
+                      src="https://picsum.photos/seed/picsum/100/100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="mid-hover">
+                    <p>523</p>
+                    <p>følgere</p>
+                    <img
+                      src="https://picsum.photos/seed/picsum/100/100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="mid-hover">
+                    <p>523</p>
+                    <p>fulgte</p>
+                    <img
+                      src="https://picsum.photos/seed/picsum/100/100"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <button class="hover-button">Besked</button
+                ><button class="hover-button">Følger</button>
+              </div>
+            </section>
+            <section class="bottom3">
+              <p>
+                <a href="#"><span class="bold">Username123</span></a>
+                Halløjsovs.
+                <a href="#"> @viaplaydanmark</a>
+              </p>
+            </section>
+            <section class="bottom4">
+              <a href=""> <p class="kursiv">Vis alle 38 kommentarer</p></a>
+            </section>
+
+            <div class="comment-show active">
+              <div class="comment-img">
+                <img src="https://picsum.photos/seed/picsum/800/500" alt="" />
+              </div>
+              <section class="comment-section">
+                <div class="top-comment">
+                  <img src="https://picsum.photos/seed/picsum/50/50" alt="" />
+                  <p>Username001</p>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+              </section>
+            </div>
+
             <section class="bottom5"><p>For 1 dag siden</p></section>
           </div>
           <div class="footerFeed1">
