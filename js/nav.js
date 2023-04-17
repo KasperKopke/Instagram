@@ -70,6 +70,11 @@ function opret() {
   });
 }
 
+function showMenuBox() {
+  const menubox = document.querySelector(".menu-btn-box");
+  menubox.classList.toggle("showMenu");
+}
+
 /*
 denne kode gør så man kan lave dark mode den ser efter om searchbtn 
 indeholder classen showSearch hvis den gør skal den ændre baggrunds

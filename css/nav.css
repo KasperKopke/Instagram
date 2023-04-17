@@ -4,25 +4,21 @@
   width: 16%;
   max-width: 420px;
   border-right: 1px solid rgba(128, 128, 128, 0.473);
-  z-index: 301;
+  z-index: 1;
 }
-
 .main-navigation ul li {
   list-style-type: none;
   width: 100%;
   padding: 10px;
 }
-
 .nav-insta-logo {
   display: none;
   margin-bottom: 41px;
 }
-
 .nav-insta-logo.active {
   display: inline;
   width: 29px;
 }
-
 .nav-insta-text.active2 {
   display: none;
 }
@@ -33,7 +29,6 @@
 .hide {
   display: none;
 }
-
 .main-navigation a {
   display: flex;
   justify-content: flex-start;
@@ -42,16 +37,13 @@
   background-color: rgb(233, 233, 233);
   border-radius: 5px;
 }
-
 .main-navigation ul li:hover .icon {
   transform: scale(1.1);
   transition: all 0.1s ease-in-out;
 }
-
 .main-navigation ul li:first-child:hover {
   background-color: rgba(211, 211, 211, 0);
 }
-
 .main-navigation ul li a {
   color: black;
 }
@@ -62,23 +54,19 @@
   gap: 11px;
   align-items: flex-start;
 }
-
 .main-navigation ul li:last-child {
   margin-top: auto;
 }
-
 .main-navigation ul li:nth-child(9) img {
   width: 30px;
   border-radius: 50px;
   margin-right: 11px;
 }
-
 .main-profile-wrapper {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
 .fa-house,
 .fa-magnifying-glass,
 .fa-compass,
@@ -91,11 +79,9 @@
   font-size: 25px;
   margin-right: 17px;
 }
-
 .main-nav-wrapper {
   display: flex;
 }
-
 .searchbar.active3 {
   display: block;
   background-color: white;
@@ -106,14 +92,12 @@
   border-radius: 0px 10px 10px 0px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
 .searchbar {
   position: fixed;
   left: -100%;
   z-index: 300;
   transition: all 0.4s ease-in-out;
 }
-
 .searchbar.active3 {
   position: fixed;
   left: 100px;
@@ -141,11 +125,9 @@
   font-weight: 600;
   font-size: 15px;
 }
-
 .nav-features {
   width: 24%;
 }
-
 .notifikationer {
   display: block;
   background-color: white;
@@ -161,7 +143,6 @@
   border-radius: 0px 10px 10px 0px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
 .notifikationer.active4 {
   display: block;
   background-color: white;
@@ -172,18 +153,15 @@
   border-radius: 0px 10px 10px 0px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
 .notifikationer article {
   margin-bottom: 20px;
 }
-
 .notifikationer.active4 {
   position: fixed;
 
   left: 100px;
   transition: all 0.4s ease-in-out;
 }
-
 .notifikationer h2 {
   padding: 20px;
   font-weight: 500;
@@ -194,22 +172,18 @@
   font-weight: 700;
   font-size: 15px;
 }
-
 .notifikationer img {
   width: 50px;
   border-radius: 50px;
 }
-
 .noti-profil-wrapper {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-
 .daguge {
   color: rgb(136, 136, 136);
 }
-
 .followbtn a {
   border-radius: 10px;
   color: white;
@@ -217,11 +191,9 @@
   padding: 7px 18px;
   background-color: rgba(0, 149, 246, 255);
 }
-
 .opret-nyt-opslag {
   display: none;
 }
-
 .opret-nyt-opslag.opretBoxShow {
   display: flex;
   position: fixed;
@@ -233,7 +205,6 @@
   background-color: rgba(0, 0, 0, 0.637);
   z-index: 400;
 }
-
 .create-new-box {
   width: 38%;
   height: 85%;
@@ -242,13 +213,11 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: white;
 }
-
 .create-new-box h2 {
   padding: 12px;
   font-size: 17px;
   font-weight: 500;
 }
-
 .bottom-box {
   display: flex;
   justify-content: center;
@@ -261,7 +230,6 @@
 .fa-file-import {
   font-size: 110px;
 }
-
 .upload-file {
   border-radius: 10px;
   color: white;
@@ -270,7 +238,6 @@
   background-color: rgba(0, 149, 246, 255);
   font-weight: 400;
 }
-
 .fa-x {
   color: white;
   position: fixed;
@@ -279,4 +246,62 @@
   font-size: 23px;
   font-weight: 100;
   cursor: pointer;
+}
+.menu-btn-box {
+  display: none;
+  position: fixed;
+  bottom: 120px;
+  left: 10px;
+  z-index: 777;
+  background-color: white;
+  padding: 10px;
+  border-radius: 17px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 13%;
+}
+.menu-btn-box::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  left: 25px;
+  top: 100%;
+  border-top: 10px solid rgb(255, 255, 255);
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+.menu-btn-box.showMenu {
+  display: inline;
+}
+.menu-btn-box ul {
+  list-style-type: none;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.menu-btn-box ul li:hover {
+  background-color: rgb(233, 233, 233);
+}
+
+.menu-btn-box li {
+  border-radius: 7px;
+}
+.menu-btn-box ul li a {
+  width: 100%;
+  display: flex;
+  color: black;
+  padding: 15px;
+}
+.mellemrum {
+  background-color: rgb(236, 236, 236);
+  height: 6px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.mellemrum2 {
+  background-color: rgb(236, 236, 236);
+  height: 2px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
