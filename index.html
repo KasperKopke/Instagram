@@ -229,13 +229,49 @@
                   ></a>
                 </li>
                 <li>
-                  <a href="#"> <i class="fa-regular fa-comment"></i></a>
+                  <a onclick="faComment()" href="#">
+                    <i class="fa-regular fa-comment"></i
+                  ></a>
                 </li>
+                <div class="faCommentDiv"></div>
+                <div class="fa-comment-div activeComment">
+                  <div class="fa-comment-img-container">
+                    <img src="/assest/profile-7.webp" alt="" />
+                  </div>
+                  <div class="fa-comment-feed">
+                    <div class="fa-comment-top">
+                      <img src="/assest/profile-3.jpg" alt="" />
+                      <p>Henrik Sørensen</p>
+                    </div>
+                    <div class="fa-comment-main-feed">
+                      <img src="/assest/profile-6.jpg" alt="" />
+                      <p>Username</p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Optio ratione eum error delectus voluptates laboriosam
+                        nostrum, suscipit facilis minus, distinctio blanditiis
+                        aspernatur recusandae culpa provident est vero
+                        perspiciatis reprehenderit porro.
+                      </p>
+                    </div>
+                  </div>
+                </div>
                 <li>
                   <a href="#"> <i class="fa-regular fa-paper-plane"></i></a>
                 </li>
-                <li>
-                  <a href="#"> <i class="fa-regular fa-bookmark"></i></a>
+                <li class="bookmarks">
+                  <a href="#">
+                    <i
+                      onclick="bookmark()"
+                      id="bookmark"
+                      class="fa-regular fa-bookmark"
+                    ></i
+                    ><i
+                      onclick="bookmark()"
+                      id="bookmark2"
+                      class="fa-solid fa-bookmark"
+                    ></i
+                  ></a>
                 </li>
               </ul>
             </section>
@@ -308,18 +344,139 @@
               </p>
             </section>
             <section class="bottom4">
-              <a href=""> <p class="kursiv">Vis alle 38 kommentarer</p></a>
+              <a onclick="showComment()" href="">
+                <p class="kursiv">Vis alle 38 kommentarer</p></a
+              >
             </section>
 
-            <div class="comment-show active">
+            <div onclick="hideMyComments()" class="comment-show active3">
               <div class="comment-img">
                 <img src="https://picsum.photos/seed/picsum/800/500" alt="" />
               </div>
               <section class="comment-section">
                 <div class="top-comment">
                   <img src="https://picsum.photos/seed/picsum/50/50" alt="" />
-                  <p>Username001</p>
+                  <p class="top-comment-username">Username001</p>
                   <i class="fa-solid fa-ellipsis"></i>
+                </div>
+                <div class="comment-feed">
+                  <img src="https://picsum.photos/seed/picsum/50/50" alt="" />
+                  <div class="comment-text-feed">
+                    <p>
+                      <span class="bold-username"> Username123</span> Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+
+                    <p class="small-font">3t. Se oversættelse</p>
+                  </div>
+                </div>
+                <div class="comment-feed">
+                  <img src="https://picsum.photos/seed/picsum/50/50" alt="" />
+                  <div class="comment-text-feed">
+                    <p>
+                      <span class="bold-username"> Username123</span> Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p class="small-font">3t. Se oversættelse</p>
+                    <i id="comment-heart" class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+                <div class="comment-feed">
+                  <img src="https://picsum.photos/seed/picsum/50/50" alt="" />
+                  <div class="comment-text-feed">
+                    <p>
+                      <span class="bold-username"> Username123</span> Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p class="small-font">3t. Se oversættelse</p>
+                    <i id="comment-heart" class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+                <div class="comment-feed">
+                  <img src="https://picsum.photos/seed/picsum/50/50" alt="" />
+                  <div class="comment-text-feed">
+                    <p>
+                      <span class="bold-username"> Username123</span> Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p class="small-font">3t. Se oversættelse</p>
+                    <i id="comment-heart" class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+                <div class="comment-feed">
+                  <img src="https://picsum.photos/seed/picsum/50/50" alt="" />
+                  <div class="comment-text-feed">
+                    <p>
+                      <span class="bold-username"> Username123</span> Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p class="small-font">3t. Se oversættelse</p>
+                    <i id="comment-heart" class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+                <div class="comment-feed">
+                  <img src="https://picsum.photos/seed/picsum/50/50" alt="" />
+                  <div class="comment-text-feed">
+                    <p>
+                      <span class="bold-username"> Username123</span> Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p class="small-font">3t. Se oversættelse</p>
+                    <i id="comment-heart" class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+                <div class="comment-feed">
+                  <img src="https://picsum.photos/seed/picsum/50/50" alt="" />
+                  <div class="comment-text-feed">
+                    <p>
+                      <span class="bold-username"> Username123</span> Lorem
+                      ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p class="small-font">3t. Se oversættelse</p>
+                    <i id="comment-heart" class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+                <section class="comment-bottom1">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i id="fa-heart" class="fa-regular fa-heart"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"> <i class="fa-regular fa-comment"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"> <i class="fa-regular fa-paper-plane"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"> <i class="fa-regular fa-bookmark"></i></a>
+                    </li>
+                  </ul>
+                  <p class="comment-likes">15.912 Synes godt om</p>
+                  <p class="comment-timestamp">FOR 3 TIMER SIDEN</p>
+                </section>
+                <div class="comment-bottom2">
+                  <div class="comment-bottom3">
+                    <form
+                      method="get"
+                      action="/"
+                      id="signUpForm"
+                      onsubmit="return(validate())"
+                    >
+                      <a href=""> <i class="fa-regular fa-face-smile"></i></a>
+
+                      <label for="">
+                        <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          placeholder="Tilføj en kommentar..."
+                      /></label>
+
+                      <button class="sendMessage">Slå op</button>
+                    </form>
+                  </div>
                 </div>
               </section>
             </div>

@@ -18,3 +18,22 @@ function hideHover() {
   const hideMeDiv = document.querySelector(".username123Hover");
   hideMeDiv.classList.remove("active2");
 }
+function showComment() {
+  const showMyComments = document.querySelector(".comment-show");
+  showMyComments.classList.add("active3");
+}
+function hideMyComments() {
+  const hideMyComments = document.querySelector(".comment-show");
+  hideMyComments.classList.remove("active3");
+}
+function bookmark() {
+  const toggleBookmarks = document.querySelector(".fa-bookmark");
+  if (toggleBookmarks.classList.contains("active4")) {
+    toggleBookmarks.classList.remove("active4");
+  } else {
+    toggleBookmarks.classList.add("active4");
+  }
+}
+function faComment() {
+  const faCommentDiv = document.querySelector(".faCommentDiv");
+}
