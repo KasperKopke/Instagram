@@ -1,4 +1,57 @@
+.profile-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid gainsboro;
+  width: 1000px;
+  margin-left: 600px;
+}
+.picture-profile {
+  margin-right: 80px;
+}
+
 .thea {
   width: 150px;
   border-radius: 50%;
+}
+.grid-profile {
+  display: grid;
+  grid-template-columns: repeat(3, 130px);
+  grid-gap: 15px;
+}
+#rediger-profil {
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+#profile-click {
+  color: black;
+}
+
+#opslag-profile {
+  color: black;
+}
+#opslag-profile:hover {
+  color: black;
+  border-top: 1px solid black;
+  padding-top: 20px;
+}
+.mini-profile li {
+  list-style-type: none;
+  gap: 50px;
+  margin-left: 70px;
+  color: black;
+}
+.mini-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 150px;
+  padding-top: 20px;
 }
