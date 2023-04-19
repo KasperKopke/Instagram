@@ -3,6 +3,7 @@
 @import url("/css/suggestions.css");
 @import url(/suggestions/css/people-list.css);
 @import url(/udforsk/udforsk.css);
+@import url(/Beskeder/beskeder.css);
 
 * {
   margin: 0;
