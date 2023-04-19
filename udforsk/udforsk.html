@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kopke</title>
+    <script
+      src="https://kit.fontawesome.com/472910ecc6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="/js/udforsk.js" defer></script>
+    <script src="/js/main.js" defer></script>
+    <script src="/js/nav.js" defer></script>
+  </head>
+  <body>
+    <section class="wrapper">
+    <div class="opret-nyt-opslag">
+      <i class="fa-solid fa-x"></i>
+      <div class="create-new-box">
+        <div class="top-box">
+          <h2>Opret nyt opslag</h2>
+        </div>
+        <hr />
+        <div class="bottom-box">
+          <i class="fa-solid fa-file-import"></i>
+          <h2>Træk billeder og videoer hertil.</h2>
+          <a class="upload-file" href="#">Vælg fra computer</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-nav-wrapper">
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <a href=""
+              ><img
+                class="nav-insta-text"
+                src="/assets/Logo-Instagram.png"
+                alt="" />
+              <img class="nav-insta-logo" src="/assets/instalogo.png" alt=""
+            /></a>
+          </li>
+
+          <li>
+            <a href="/index.html"
+              ><i class="fa-solid fa-house icon"></i>
+              <span id="hideText" >Startside</span>
+            </a>
+          </li>
+          <li>
+            <a onclick="navSearch()" href="#"
+              ><i class="fa-solid fa-magnifying-glass icon"></i
+              ><span id="hideText">Søg</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa-regular fa-compass icon"></i>
+              <span style="font-weight: 700" id="hideText">Udforsk</span>
+            </a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa-solid fa-clapperboard icon"></i>
+              <span id="hideText">Reels</span>
+            </a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa-regular fa-paper-plane icon"></i>
+              <span id="hideText">Beskeder</span>
+            </a>
+          </li>
+          <li>
+            <a onclick="notifikationer()" href="#"
+              ><i class="fa-regular fa-heart icon"></i>
+              <span id="hideText">Notifikationer</span>
+            </a>
+          </li>
+          <li>
+            <a onclick="opret()" href="#">
+              <i class="fa-regular fa-square-plus icon"> </i>
+              <span id="hideText">Opret</span>
+            </a>
+          </li>
+          <li>
+            <a href=""
+              ><img class="icon" src="/assets/profilbillede.PNG" alt="" /><span
+                id="hideText"
+                >Profil</span
+              ></a
+            >
+          </li>
+          <li>
+            <a onclick="showMenuBox()" href="#"
+              ><i class="fa-solid fa-bars icon"></i>
+              <span id="hideText">Mere</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="menu-btn-box">
+        <ul>
+          <li>
+            <a href=""><span>Indstillinger</span> </a>
+          </li>
+          <li>
+            <a href=""> <span>Din aktivitet</span> </a>
+          </li>
+          <li>
+            <a href=""><span>Gemt</span> </a>
+          </li>
+          <li>
+            <a href=""><span>Skift udseende</span></a>
+          </li>
+          <li>
+            <a href=""><span>Rapportér et problem</span> </a>
+          </li>
+          <div class="mellemrum"></div>
+          <li>
+            <a href=""><span>Skift konto</span> </a>
+          </li>
+          <div class="mellemrum2"></div>
+          <li>
+            <a href=""><span>Log af</span> </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-features">
+        <div class="searchbar">
+          <h2>Søg</h2>
+          <input type="text" placeholder="Søg" />
+          <hr />
+          <h3>Seneste</h3>
+        </div>
+        <div class="notifikationer">
+          <h2>Notifikationer</h2>
+          <h3>I denne uge</h3>
+          <article>
+            <div class="noti-profil-wrapper">
+              <div class="noti-profile-left">
+                <img src="/assets/profilbillede.PNG" alt="" />
+              </div>
+              <div class="noti-profile-right">
+                <p>
+                  Følg <b> sebastian_d_sorensen, jonasdaater</b> og <br />
+                  andre, du kender, for at se deres billeder og <br />
+                  videoer. <span class="daguge">4 d.</span>
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <div class="noti-profil-wrapper">
+              <div class="noti-profile-left">
+                <img src="/assets/profilbillede.PNG" alt="" />
+              </div>
+              <div class="noti-profile-right">
+                <p>
+                  Følg <b> rasmus_sonneby,</b> som du måske <br />
+                  kender, er på Instagram. <span class="daguge">5 d.</span>
+                </p>
+              </div>
+              <div class="followbtn">
+                <a href="">Følg</a>
+              </div>
+            </div>
+          </article>
+          <hr />
+          <h3>I denne måned</h3>
+
+          <article>
+            <div class="noti-profil-wrapper">
+              <div class="noti-profile-left">
+                <img src="/assets/profilbillede.PNG" alt="" />
+              </div>
+              <div class="noti-profile-right">
+                <p>
+                  Følg <b> rasmus_sonneby,</b> som du måske <br />
+                  kender, er på Instagram. <span class="daguge">5 d.</span>
+                </p>
+              </div>
+              <div class="followbtn">
+                <a href="">Følg</a>
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <div class="noti-profil-wrapper">
+              <div class="noti-profile-left">
+                <img src="/assets/profilbillede.PNG" alt="" />
+              </div>
+              <div class="noti-profile-right">
+                <p>
+                  Følg <b> rasmus_sonneby,</b> som du måske <br />
+                  kender, er på Instagram. <span class="daguge">5 d.</span>
+                </p>
+              </div>
+              <div class="followbtn">
+                <a href="">Følg</a>
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <div class="noti-profil-wrapper">
+              <div class="noti-profile-left">
+                <img src="/assets/profilbillede.PNG" alt="" />
+              </div>
+              <div class="noti-profile-right">
+                <p>
+                  Følg <b> rasmus_sonneby,</b> som du måske <br />
+                  kender, er på Instagram. <span class="daguge">5 d.</span>
+                </p>
+              </div>
+              <div class="followbtn">
+                <a href="">Følg</a>
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <div class="noti-profil-wrapper">
+              <div class="noti-profile-left">
+                <img src="/assets/profilbillede.PNG" alt="" />
+              </div>
+              <div class="noti-profile-right">
+                <p>
+                  Følg <b> rasmus_sonneby,</b> som du måske <br />
+                  kender, er på Instagram. <span class="daguge">5 d.</span>
+                </p>
+              </div>
+              <div class="followbtn">
+                <a href="">Følg</a>
+              </div>
+            </div>
+          </article>
+          <hr />
+          <h3>Tidligere</h3>
+          <article>
+            <div class="noti-profil-wrapper">
+              <div class="noti-profile-left">
+                <img src="/assets/profilbillede.PNG" alt="" />
+              </div>
+              <div class="noti-profile-right">
+                <p>
+                  Følg <b> rasmus_sonneby,</b> som du måske <br />
+                  kender, er på Instagram. <span class="daguge">5 d.</span>
+                </p>
+              </div>
+              <div class="followbtn">
+                <a href="">Følg</a>
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <div class="noti-profil-wrapper">
+              <div class="noti-profile-left">
+                <img src="/assets/profilbillede.PNG" alt="" />
+              </div>
+              <div class="noti-profile-right">
+                <p>
+                  Følg <b> rasmus_sonneby,</b> som du måske <br />
+                  kender, er på Instagram. <span class="daguge">5 d.</span>
+                </p>
+              </div>
+              <div class="followbtn">
+                <a href="">Følg</a>
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <div class="noti-profil-wrapper">
+              <div class="noti-profile-left">
+                <img src="/assets/profilbillede.PNG" alt="" />
+              </div>
+              <div class="noti-profile-right">
+                <p>
+                  Følg <b> rasmus_sonneby,</b> som du måske <br />
+                  kender, er på Instagram. <span class="daguge">5 d.</span>
+                </p>
+              </div>
+              <div class="followbtn">
+                <a href="">Følg</a>
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <div class="noti-profil-wrapper">
+              <div class="noti-profile-left">
+                <img src="/assets/profilbillede.PNG" alt="" />
+              </div>
+              <div class="noti-profile-right">
+                <p>
+                  Følg <b> rasmus_sonneby,</b> som du måske <br />
+                  kender, er på Instagram. <span class="daguge">5 d.</span>
+                </p>
+              </div>
+              <div class="followbtn">
+                <a href="">Følg</a>
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <div class="noti-profil-wrapper">
+              <div class="noti-profile-left">
+                <img src="/assets/profilbillede.PNG" alt="" />
+              </div>
+              <div class="noti-profile-right">
+                <p>
+                  Følg <b> rasmus_sonneby,</b> som du måske <br />
+                  kender, er på Instagram. <span class="daguge">5 d.</span>
+                </p>
+              </div>
+              <div class="followbtn">
+                <a href="">Følg</a>
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <div class="noti-profil-wrapper">
+              <div class="noti-profile-left">
+                <img src="/assets/profilbillede.PNG" alt="" />
+              </div>
+              <div class="noti-profile-right">
+                <p>
+                  Følg <b> rasmus_sonneby,</b> som du måske <br />
+                  kender, er på Instagram. <span class="daguge">5 d.</span>
+                </p>
+              </div>
+              <div class="followbtn">
+                <a href="">Følg</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <section class="small-change" >
+    <section class="udforsk-picture-grid">
+      <div class="picture-grid-container part-1">
+        <img class="grid-picture" src="/assets/instagram.png" alt="" />
+      </div>
+
+      <div class="picture-grid-container part-2">
+        <img class="grid-picture" src="/assets/instagram-1.png" alt="" />
+      </div>
+      <div class="video-grid-container part-3">
+        <video
+          class="video-grid"
+          src="/assets/1 minute funny videos-[onlinevideoconverter.com].mp4"
+          width="400"
+          height="800"
+          controls
+        ></video>
+      </div>
+      <div class="picture-grid-container part-4">
+        <img class="grid-picture" src="/assets/instagram-2.png" alt="" />
+      </div>
+      <div class="picture-grid-container part-5">
+        <img class="grid-picture" src="/assets/instagram-3.png" alt="" />
+      </div>
+      <div class="picture-grid-container part-6">
+        <img class="grid-picture" src="/assets/instagram-4.jpg" alt="" />
+      </div>  <video
+          class="video-grid"
+          src="/assets/Feminist Says MEN VALUE Their CARS MORE Than Their FAMILY.mp4"
+          width="400"
+          height="400"
+         
+          controls
+        ></video>
+      </div>
+      <div class="picture-grid-container part-7">
+        <img class="grid-picture" src="/assets/instagram-5.png" alt="" />
+      </div>
+      <div class="video-grid-container-1 part-8">
+      
+      <div class="picture-grid-container part-9">
+        <img class="grid-picture" src="/assets/instagram-6.png" alt="" />
+      </div>
+    </section></div>
+  </section>
+  </body>
+</html>
