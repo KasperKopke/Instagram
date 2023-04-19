@@ -264,21 +264,18 @@
 .bottom1 ul li {
   list-style-type: none;
 }
-.fa-heart {
-  color: black;
-}
-.fa-regular.fa-bookmark.active4 {
-  display: none;
-}
-.fa-regular.fa-bookmark {
-  display: inline-block;
+.bottom1 ul li:last-child {
+  margin-left: 350px;
 }
 .fa-solid.fa-bookmark {
-  display: none;
-}
-.fa-solid.fa-bookmark.active4 {
   display: inline-block;
+  color: black;
+  opacity: 50%;
 }
+.fa-solid.fa-bookmark.bookmarkActive {
+  opacity: 100%;
+}
+
 .faCommentDiv.activeComment {
   position: absolute;
   background-color: rgb(0, 0, 0, 0.6);
@@ -290,30 +287,156 @@
 .fa-comment-div {
   display: none;
 }
-.fa-comment-div.activeComment {
+.fa-comment-div.activeComment2 {
   display: flex;
   position: relative;
   flex-direction: row;
   bottom: 755px;
-  right: 55px;
+  right: 200px;
+  max-width: 100%;
+  min-height: 100%;
 }
 .fa-comment-div img {
   width: 450px;
-  height: 550px;
+  height: 750px;
+}
+.fa-comment-top-of-feed {
+  margin-top: 15px;
+  font-size: 12px;
+}
+.fa-comment-top-of-feed img {
+  margin-left: 15px;
+  border-radius: 50%;
+}
+.fa-comment-img-container {
+  border-top: 25px solid black;
+  border-bottom: 25px solid black;
 }
 .fa-comment-feed img {
   width: 35px;
   height: 35px;
 }
+
+.fa-comment-feed {
+  display: flex;
+  height: 800px;
+  flex-direction: column;
+  background-color: white;
+}
+.fa-comment-top {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+  gap: 10px;
+  height: 55px;
+  align-items: center;
+}
+#comment-ellipsis {
+  margin-left: 293px;
+}
+.fa-comment-top img {
+  margin-left: 15px;
+  border-radius: 50%;
+}
+.fa-comment-top p {
+  width: 100px;
+  font-size: 12px;
+  font-weight: 600;
+}
+#user-henrik {
+  color: white;
+  font-size: 8px;
+  border: 1px solid white;
+  background-color: #4267b2;
+  border-radius: 50%;
+  padding: 2px 2px;
+  margin-left: -15px;
+}
+.fa-comment-container {
+  display: flex;
+  gap: 10px;
+}
+#fa-comment-heart {
+  margin-left: 55px;
+  position: static;
+  margin-top: 5px;
+}
+.fa-comment-bottom {
+  margin-top: 15px;
+  border-top: 1px solid rgb(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+}
+.fa-comment-bottom ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 15px;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+#fa-comment-bookmark {
+  margin-right: 10px;
+}
+.fa-comment-likes {
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+.fa-comment-timestamp {
+  font-size: 9px;
+  font-weight: 100;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.small-font-container {
+  margin-left: 62px;
+}
+
 .smaller-font {
   display: inline-block;
+  font-size: 10px;
 }
 .small-font {
   display: inline-block;
+  font-size: 14px;
 }
 .fa-comment-main-feed {
   display: flex;
   flex-direction: column;
+}
+.fa-comment-bottom3 {
+  width: 100%;
+}
+.fa-comment-bottom3 input {
+  border: none;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  outline: none;
+}
+
+.fa-comment-bottom3 .fa-face-smile {
+  margin: 0 10px;
+}
+#fa-name {
+  width: 75%;
+}
+.fa-sendMessage {
+  border: none;
+  background-color: white;
+  color: #4267b2;
+  margin-top: 15px;
+  margin-left: 15px;
+  font-weight: bold;
+  opacity: 30%;
+}
+.fa-comment-bottom3 input::placeholder {
+  font-size: 12px;
+  color: black;
+  opacity: 60%;
 }
 
 .username123Hover {
@@ -422,6 +545,7 @@
 .comment-show.active3 {
   display: flex;
   position: absolute;
+  overflow-x: hidden;
   flex-direction: row;
   height: 100%;
   width: 100%;
@@ -564,8 +688,6 @@
 
   opacity: 60%;
 }
-.comment-bottom3 form {
-}
 
 .bottom5 {
   font-size: 12px;
@@ -603,6 +725,22 @@
 .footer-feed input::placeholder {
   color: black;
   font-size: 12px;
-
   opacity: 60%;
+}
+.fapaper-container {
+}
+.fapaper-plane {
+  display: flex;
+  width: 380px;
+  border: 1px solid black;
+  height: 480px;
+  justify-content: center;
+}
+
+.fapaper-top {
+  border-bottom: 1px solid rgb(0, 0, 0, 0.6);
+  border: 1px solid black;
+  height: 40px;
+}
+.fa-solid.fa-x {
 }

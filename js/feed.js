@@ -28,12 +28,19 @@ function hideMyComments() {
 }
 function bookmark() {
   const toggleBookmarks = document.querySelector(".fa-bookmark");
-  if (toggleBookmarks.classList.contains("active4")) {
-    toggleBookmarks.classList.remove("active4");
-  } else {
-    toggleBookmarks.classList.add("active4");
-  }
+  toggleBookmarks.classList.toggle("bookmarkActive");
 }
 function faComment() {
   const faCommentDiv = document.querySelector(".faCommentDiv");
+  faCommentDiv.classList.add("activeComment");
+}
+function faCommentHide() {
+  const faCommentDiv3 = document.querySelector(".faCommentDiv");
+  const faCommentDiv4 = document.querySelector(".fa-comment-div");
+  faCommentDiv3.classList.remove("activeComment");
+  faCommentDiv4.classList.remove("activeComment2");
+}
+function faComment2() {
+  const faCommentDiv2 = document.querySelector(".fa-comment-div");
+  faCommentDiv2.classList.add("activeComment2");
 }
