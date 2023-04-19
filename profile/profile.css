@@ -52,6 +52,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 150px;
+  margin-left: 210px;
   padding-top: 20px;
+}
+.profile-picture-container {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  margin-left: 640px;
+  margin-top: 20px;
+  grid-gap: 12px;
+}
+
+#profile-grid-picture {
+  width: 300px;
 }
