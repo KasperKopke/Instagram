@@ -42,6 +42,22 @@
   border-top: 1px solid black;
   padding-top: 20px;
 }
+#gemt-profile {
+  color: black;
+}
+#gemt-profile:hover {
+  color: black;
+  border-top: 1px solid black;
+  padding-top: 20px;
+}
+#tagget-profile {
+  color: black;
+}
+#tagget-profile:hover {
+  color: black;
+  border-top: 1px solid black;
+  padding-top: 20px;
+}
 .mini-profile li {
   list-style-type: none;
   gap: 50px;
@@ -52,15 +68,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 210px;
+  position: absolute;
+  top: 255px;
+  left: 865px;
+
   padding-top: 20px;
 }
-.profile-picture-container {
+
+.profile-picture-container-1.active {
   display: grid;
   grid-template-columns: repeat(3, 300px);
   margin-left: 640px;
-  margin-top: 20px;
+  margin-top: 60px;
   grid-gap: 12px;
+}
+.profile-picture-container-2.active {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  margin-left: 640px;
+  margin-top: 60px;
+  grid-gap: 12px;
+}
+.profile-picture-container-3.active {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  margin-left: 640px;
+  margin-top: 60px;
+  grid-gap: 12px;
+}
+.profile-picture-container-1 {
+  display: none;
+}
+.profile-picture-container-2 {
+  display: none;
+}
+.profile-picture-container-3 {
+  display: none;
 }
 
 #profile-grid-picture {
