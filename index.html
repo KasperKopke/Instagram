@@ -235,8 +235,11 @@
                 </li>
 
                 <li>
-                  <a onclick="faPaperPlane()" href="">
-                    <i class="fa-regular fa-paper-plane"></i
+                  <a onclick="faPaper()" href="#">
+                    <i
+                      onclick="faPaper2()"
+                      class="fa-regular fa-paper-plane"
+                    ></i
                   ></a>
                 </li>
                 <li>
@@ -719,16 +722,59 @@
         </div>
       </section>
     </section>
-    <div class="fapaper-plane-empty"></div>
+    <div class="plane-empty" onclick="faPaperHide()"></div>
     <div class="fapaper-container">
       <div class="fapaper-plane">
         <section class="fapaper-top">
           <h2 class="share">Del</h2>
-          <i class="fa-solid fa-x"></i>
+          <p><i onclick="hideMyFaPaperPlane()" class="fa-solid fa-x"></i></p>
         </section>
-        <section class="fapaper-midt"></section>
-        <section class="fapaper-midb"></section>
-        <section class="fapaper-bottom"></section>
+        <section class="fapaper-midt">
+          <h3>Til:</h3>
+          <input type="text" placeholder="Søg ..." />
+        </section>
+        <p class="fapaper-forslag">Forslag</p>
+        <section class="fapaper-midb">
+          <div class="fapaper-row">
+            <img src="/assest/profile-6.jpg" alt="" />
+
+            <div class="fapaper-column">
+              <p class="fapaper-bold">user1</p>
+              <p class="fapaper-username1">username1</p>
+            </div>
+            <i class="fa-regular fa-circle"></i>
+          </div>
+          <div class="fapaper-row">
+            <img src="/assest/profile-2.jpg" alt="" />
+
+            <div class="fapaper-column">
+              <p class="fapaper-bold">user2</p>
+              <p class="fapaper-username1">username2</p>
+            </div>
+            <i class="fa-regular fa-circle"></i>
+          </div>
+          <div class="fapaper-row">
+            <img src="/assest/profile-3.jpg" alt="" />
+
+            <div class="fapaper-column">
+              <p class="fapaper-bold">user3</p>
+              <p class="fapaper-username1">username3</p>
+            </div>
+            <i class="fa-regular fa-circle"></i>
+          </div>
+          <div class="fapaper-row">
+            <img src="/assest/profile-4.jpg" alt="" />
+
+            <div class="fapaper-column">
+              <p class="fapaper-bold">user4</p>
+              <p class="fapaper-username1">username4</p>
+            </div>
+            <i class="fa-regular fa-circle"></i>
+          </div>
+        </section>
+        <section class="fapaper-bottom">
+          <button class="fapaper-sendmessage">Send</button>
+        </section>
       </div>
     </div>
   </body>

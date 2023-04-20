@@ -34,13 +34,36 @@ function faComment() {
   const faCommentDiv = document.querySelector(".faCommentDiv");
   faCommentDiv.classList.add("activeComment");
 }
+function faComment2() {
+  const faCommentDiv2 = document.querySelector(".fa-comment-div");
+  faCommentDiv2.classList.add("activeComment2");
+}
 function faCommentHide() {
   const faCommentDiv3 = document.querySelector(".faCommentDiv");
   const faCommentDiv4 = document.querySelector(".fa-comment-div");
   faCommentDiv3.classList.remove("activeComment");
   faCommentDiv4.classList.remove("activeComment2");
 }
-function faComment2() {
-  const faCommentDiv2 = document.querySelector(".fa-comment-div");
-  faCommentDiv2.classList.add("activeComment2");
+
+function faPaper() {
+  const faPaperFunction2 = document.querySelector(".fapaper-container");
+  faPaperFunction2.classList.add("active11");
+  const faPaperFunction = document.querySelector(".plane-empty");
+  faPaperFunction.classList.add("active10");
+}
+function faPaper2() {
+  const faPaperFunction3 = document.querySelector(".plane-empty");
+  faPaperFunction3.classList.add("active10");
+}
+function faPaperHide() {
+  const faPaperHide = document.querySelector(".plane-empty");
+  const faPaperHide2 = document.querySelector(".fapaper-container");
+  faPaperHide.classList.remove("active10");
+  faPaperHide2.classList.remove("active11");
+}
+function hideMyFaPaperPlane() {
+  const hideMyFaPaperPlane = document.querySelector(".fapaper-container");
+  const hideMyFaPaperPlane2 = document.querySelector(".plane-empty");
+  hideMyFaPaperPlane.classList.remove("active11");
+  hideMyFaPaperPlane2.classList.remove("active10");
 }
