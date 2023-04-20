@@ -16,7 +16,6 @@
   flex-direction: column;
   gap: 18px;
   border-radius: 0px 4px 4px 0px;
-  display: none;
 }
 
 .besked-side-box-left {
@@ -99,6 +98,23 @@
   height: 850px;
   width: 600px;
   border-radius: 0px 4px 4px 0px;
+  display: none;
+}
+
+.anders.active {
+  display: block;
+}
+
+.soren.active {
+  display: block;
+}
+
+.kasper.active {
+  display: block;
+}
+
+.start-besked-side.hide {
+  display: none;
 }
 
 .soren {
@@ -107,6 +123,7 @@
   width: 600px;
   display: none;
 }
+
 .kasper {
   border: 1px solid rgba(0, 0, 0, 0.205);
   height: 850px;
