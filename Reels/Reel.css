@@ -1,0 +1,16 @@
+.reels {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-reels-container {
+  width: 400px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 200px;
+  margin-top: 70px;
+  box-shadow: 1px 1px 40px 5px black;
+}
