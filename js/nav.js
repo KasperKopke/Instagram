@@ -1,55 +1,84 @@
-function navSearch() {
-  const magnifyingGlass = document.querySelector(".fa-magnifying-glass");
-  magnifyingGlass.classList.toggle("showSearch");
+const sogAndNoti = document.querySelectorAll(".navli");
+console.log(sogAndNoti);
 
-  const activeLogo = document.querySelector(".nav-insta-logo");
-  activeLogo.classList.toggle("active");
-  const activetext = document.querySelector(".nav-insta-text");
-  activetext.classList.toggle("active2");
-  const searchbar = document.querySelector(".searchbar");
-  searchbar.classList.toggle("active3");
+const profilting1 = document.querySelector(".search");
+const profilting2 = document.querySelector(".noti");
 
-  const meElements = document.querySelectorAll("#hideText");
-  for (let index = 0; index < meElements.length; index++) {
-    meElements[index].classList.toggle("hide");
-  }
+const box1 = document.querySelector("#btns1");
+const box2 = document.querySelector("#btns2");
 
-  if (magnifyingGlass.classList.contains("showSearch")) {
-    document.querySelector(".main-navigation").style.maxWidth = "100px";
-    document.querySelector(".main-navigation").style.transition =
-      "all 0.3s ease-in-out";
-  } else {
-    document.querySelector(".main-navigation").style.maxWidth = "320px";
-    document.querySelector(".main-navigation").style.transition =
-      "all 0.3s ease-in-out";
-  }
-}
+const searchbar = document.querySelector(".searchbar");
+const notiBar = document.querySelector(".notifikationer");
 
-function notifikationer() {
-  const magnifyingGlass = document.querySelector(".fa-heart");
-  magnifyingGlass.classList.toggle("Noti");
+const alleKnapper = document.querySelectorAll("#hideText");
 
-  const activeLogo = document.querySelector(".nav-insta-logo");
-  activeLogo.classList.toggle("active");
-  const activetext = document.querySelector(".nav-insta-text");
-  activetext.classList.toggle("active2");
-  const notiBar = document.querySelector(".notifikationer");
-  notiBar.classList.toggle("active4");
+const activeLogo = document.querySelector(".nav-insta-logo");
+const activetext = document.querySelector(".nav-insta-text");
 
-  const meElements = document.querySelectorAll("#hideText");
-  for (let index = 0; index < meElements.length; index++) {
-    meElements[index].classList.toggle("hide");
-  }
+for (let index = 0; index < sogAndNoti.length; index++) {
+  console.log(sogAndNoti[index]);
+  sogAndNoti[index].addEventListener("click", (data) => {
+    console.log(data.target);
+    if (box1.contains(data.target)) {
+      console.log("ja");
+      profilting1.classList.toggle("active");
 
-  if (magnifyingGlass.classList.contains("Noti")) {
-    document.querySelector(".main-navigation").style.maxWidth = "100px";
-    document.querySelector(".main-navigation").style.transition =
-      "all 0.3s ease-in-out";
-  } else {
-    document.querySelector(".main-navigation").style.maxWidth = "320px";
-    document.querySelector(".main-navigation").style.transition =
-      "all 0.3s ease-in-out";
-  }
+      searchbar.classList.toggle("active");
+    } else {
+      console.log("nej");
+      profilting1.classList.remove("active");
+
+      searchbar.classList.remove("active");
+    }
+
+    if (box2.contains(data.target)) {
+      console.log("ja");
+      profilting2.classList.toggle("active");
+
+      notiBar.classList.toggle("active");
+    } else {
+      console.log("nej");
+      profilting2.classList.remove("active");
+
+      notiBar.classList.remove("active");
+    }
+
+    if (
+      searchbar.classList.contains("active") ||
+      notiBar.classList.contains("active")
+    ) {
+      activeLogo.classList.add("active");
+      activetext.classList.add("active");
+    } else {
+      activeLogo.classList.remove("active");
+      activetext.classList.remove("active");
+    }
+
+    for (let index2 = 0; index2 < alleKnapper.length; index2++) {
+      console.log(alleKnapper[index2]);
+      if (
+        profilting1.classList.contains("active") ||
+        profilting2.classList.contains("active")
+      ) {
+        alleKnapper[index2].classList.add("hide");
+      } else {
+        alleKnapper[index2].classList.remove("hide");
+      }
+    }
+
+    if (
+      profilting1.classList.contains("active") ||
+      profilting2.classList.contains("active")
+    ) {
+      document.querySelector(".main-navigation").style.maxWidth = "100px";
+      document.querySelector(".main-navigation").style.transition =
+        "all 0.3s ease-in-out";
+    } else {
+      document.querySelector(".main-navigation").style.maxWidth = "320px";
+      document.querySelector(".main-navigation").style.transition =
+        "all 0.3s ease-in-out";
+    }
+  });
 }
 
 function opret() {
@@ -74,17 +103,3 @@ function showMenuBox() {
   const menubox = document.querySelector(".menu-btn-box");
   menubox.classList.toggle("showMenu");
 }
-
-/*
-denne kode gør så man kan lave dark mode den ser efter om searchbtn 
-indeholder classen showSearch hvis den gør skal den ændre baggrunds
-farven til sort hvis ikke så skal den være hvid
-
-if (magnifyingGlass.classList.contains("showSearch")) {
-    document.querySelector("body").style.backgroundColor = "#000";
-  } else {
-    document.querySelector("body").style.backgroundColor = "#fff";
-  }
-  console.log("magnifyingGlass");
-
-*/
