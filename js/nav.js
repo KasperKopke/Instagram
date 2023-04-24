@@ -1,11 +1,11 @@
-const sogAndNoti = document.querySelectorAll(".navli");
-console.log(sogAndNoti);
+const beggeKnapper = document.querySelectorAll(".navli");
+console.log(beggeKnapper);
 
-const profilting1 = document.querySelector(".search");
-const profilting2 = document.querySelector(".noti");
+const searchh = document.querySelector(".search");
+const notif = document.querySelector(".noti");
 
-const box1 = document.querySelector("#btns1");
-const box2 = document.querySelector("#btns2");
+const sog = document.querySelector("#btns1");
+const notfifik = document.querySelector("#btns2");
 
 const searchbar = document.querySelector(".searchbar");
 const notiBar = document.querySelector(".notifikationer");
@@ -15,30 +15,30 @@ const alleKnapper = document.querySelectorAll("#hideText");
 const activeLogo = document.querySelector(".nav-insta-logo");
 const activetext = document.querySelector(".nav-insta-text");
 
-for (let index = 0; index < sogAndNoti.length; index++) {
-  console.log(sogAndNoti[index]);
-  sogAndNoti[index].addEventListener("click", (data) => {
+for (let index = 0; index < beggeKnapper.length; index++) {
+  console.log(beggeKnapper[index]);
+  beggeKnapper[index].addEventListener("click", (data) => {
     console.log(data.target);
-    if (box1.contains(data.target)) {
+    if (sog.contains(data.target)) {
       console.log("ja");
-      profilting1.classList.toggle("active");
+      searchh.classList.toggle("active");
 
       searchbar.classList.toggle("active");
     } else {
       console.log("nej");
-      profilting1.classList.remove("active");
+      searchh.classList.remove("active");
 
       searchbar.classList.remove("active");
     }
 
-    if (box2.contains(data.target)) {
+    if (notfifik.contains(data.target)) {
       console.log("ja");
-      profilting2.classList.toggle("active");
+      notif.classList.toggle("active");
 
       notiBar.classList.toggle("active");
     } else {
       console.log("nej");
-      profilting2.classList.remove("active");
+      notif.classList.remove("active");
 
       notiBar.classList.remove("active");
     }
@@ -57,8 +57,8 @@ for (let index = 0; index < sogAndNoti.length; index++) {
     for (let index2 = 0; index2 < alleKnapper.length; index2++) {
       console.log(alleKnapper[index2]);
       if (
-        profilting1.classList.contains("active") ||
-        profilting2.classList.contains("active")
+        searchh.classList.contains("active") ||
+        notif.classList.contains("active")
       ) {
         alleKnapper[index2].classList.add("hide");
       } else {
@@ -67,8 +67,8 @@ for (let index = 0; index < sogAndNoti.length; index++) {
     }
 
     if (
-      profilting1.classList.contains("active") ||
-      profilting2.classList.contains("active")
+      searchh.classList.contains("active") ||
+      notif.classList.contains("active")
     ) {
       document.querySelector(".main-navigation").style.maxWidth = "100px";
       document.querySelector(".main-navigation").style.transition =
