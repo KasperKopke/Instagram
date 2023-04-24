@@ -10,7 +10,7 @@ const box5 = document.querySelector(".test-2");
 const box6 = document.querySelector(".test-3");
 
 for (let index = 0; index < alleProfiler2.length; index++) {
-  console.log(alleProfiler[index]);
+  console.log(alleProfiler2[index]);
   alleProfiler2[index].addEventListener("click", (data) => {
     console.log(data.target);
 
