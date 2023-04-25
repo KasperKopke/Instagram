@@ -14,7 +14,7 @@ for (let index = 0; index < alleProfiler.length; index++) {
   console.log(alleProfiler[index]);
   alleProfiler[index].addEventListener("click", (data) => {
     console.log(data.target);
-    if (data.target === box1) {
+    if (box1.contains(data.target)) {
       console.log("ja");
       profilting1.classList.add("active");
       startSide.classList.add("hide");
@@ -23,7 +23,7 @@ for (let index = 0; index < alleProfiler.length; index++) {
       profilting1.classList.remove("active");
     }
 
-    if (data.target === box2) {
+    if (box2.contains(data.target)) {
       console.log("ja");
       profilting2.classList.add("active");
       startSide.classList.add("hide");
@@ -32,7 +32,7 @@ for (let index = 0; index < alleProfiler.length; index++) {
       profilting2.classList.remove("active");
     }
 
-    if (data.target === box3) {
+    if (box3.contains(data.target)) {
       console.log("ja");
       profilting3.classList.add("active");
       startSide.classList.add("hide");
