@@ -1,7 +1,10 @@
 @import url("/css/feed.css");
 @import url("/css/nav.css");
 @import url("/css/suggestions.css");
-
+@import url(/suggestions/css/people-list.css);
+@import url(/udforsk/udforsk.css);
+@import url(/Beskeder/beskeder.css);
+@import url(/profile/profile.css);
 * {
   margin: 0;
   padding: 0;
