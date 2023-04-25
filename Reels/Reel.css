@@ -1,21 +1,36 @@
-.reels {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .video-reels-container {
   width: 400px;
-  height: 700px;
+  height: 650px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 200px;
-  margin-top: 50px;
+  margin-top: 60px;
+  margin-bottom: 70px;
   box-shadow: 1px 1px 40px 5px black;
   border-radius: 15px;
 }
 .video-grid-reel {
   border-radius: 15px;
+}
+
+.reels-omringer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+.airpod {
+  margin-top: 450px;
+}
+
+#reels-tag {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 30px;
+}
+#tag-reels {
+  color: black;
 }
