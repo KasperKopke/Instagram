@@ -10,57 +10,57 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="/css/main.css" />
-    <script src="/js/feed.js" defer></script>
+    <link rel="stylesheet" href="/css/feed.css" />
+    <script src="js/feed.js" defer></script>
   </head>
   <body>
     <section class="main">
-      <div onclick="hideFunction()" class="hide-function">
-        <div class="function-ellipsis">
-          <ul>
-            <div class="report">
-              <li>
-                <a>Anmeld</a>
-              </li>
-            </div>
+      <div onclick="hideFunction()" class="hide-function"></div>
+      <div class="function-ellipsis">
+        <ul>
+          <div class="report">
+            <li>
+              <a>Anmeld</a>
+            </li>
+          </div>
 
-            <div class="dont-Follow">
-              <li><a>Følg ikke længere</a></li>
-            </div>
-            <div class="the-rest">
-              <li><a>Føj til favoritter</a></li>
-            </div>
-            <div class="the-rest">
-              <li>
-                <a>Gå til opslag</a>
-              </li>
-            </div>
-            <div class="the-rest">
-              <li>
-                <a>Del her:</a>
-              </li>
-            </div>
-            <div class="the-rest">
-              <li>
-                <a>Kopiér link</a>
-              </li>
-            </div>
-            <div class="the-rest">
-              <li>
-                <a>Indlejr</a>
-              </li>
-            </div>
-            <div class="the-rest">
-              <li>
-                <a>Om denne konto</a>
-              </li>
-            </div>
-            <div class="the-rest7">
-              <li>
-                <a>Annuler</a>
-              </li>
-            </div>
-          </ul>
-        </div>
+          <div class="dont-Follow">
+            <li><a>Følg ikke længere</a></li>
+          </div>
+          <div class="the-rest">
+            <li><a>Føj til favoritter</a></li>
+          </div>
+          <div class="the-rest">
+            <li>
+              <a>Gå til opslag</a>
+            </li>
+          </div>
+          <div class="the-rest">
+            <li>
+              <a>Del her:</a>
+            </li>
+          </div>
+          <div class="the-rest">
+            <li>
+              <a>Kopiér link</a>
+            </li>
+          </div>
+          <div class="the-rest">
+            <li>
+              <a>Indlejr</a>
+            </li>
+          </div>
+          <div class="the-rest">
+            <li>
+              <a>Om denne konto</a>
+            </li>
+          </div>
+          <div class="the-rest7">
+            <li>
+              <a>Annuler</a>
+            </li>
+          </div>
+        </ul>
       </div>
 
       <nav class="story-feed">
@@ -124,7 +124,7 @@
         </article>
         <div id="forslag">
           <h4 id="gray">forslag til dig</h4>
-          <a id="look1" href="suggestions/se-alle.html">Se alle</a>
+          <a id="look1" href="/assest/se-alle.html">Se alle</a>
         </div>
         <article class="next-profile">
           <img id="profile-picture1" src="/assest/profile-2.jpg" alt="" />
@@ -175,9 +175,9 @@
           <a id="look" href="">Følg</a>
         </article>
         <div id="link-boxs">
-          <a id="gray1" target="_blank" href="suggestions/Om.html">Om</a> -
+          <a id="gray1" target="_blank" href="/Om.html">Om</a> -
           <a id="gray1" target="_blank" href="">Hjælp</a> -
-          <a id="gray1" target="_blank" href="suggestions/presse.html"
+          <a id="gray1" target="_blank" href="/presse.html"
             >Pressemeddelelser</a
           >
           - <a id="gray1" target="_blank" href="suggestions/API.html">API</a> -
@@ -215,7 +215,13 @@
               <p class="Location1">Spain</p>
             </div>
 
-            <i onclick="myfunctoin()" class="fa-solid fa-ellipsis"></i>
+            <a
+              class="myEllipsisFunction"
+              onclick="myEllipsisFunction()"
+              href="#"
+            >
+              <i onclick="myfunctoin()" class="fa-solid fa-ellipsis"></i
+            ></a>
           </div>
           <div class="mainFeed1">
             <img src="https://picsum.photos/seed/picsum/466/600" alt="" />
@@ -562,19 +568,22 @@
             </section>
             <section class="bottom4">
               <a onclick="showComment()" href="#">
-                <p class="kursiv">Vis alle 38 kommentarer</p></a
+                <p onclick="showMyComments()" class="kursiv">
+                  Vis alle 38 kommentarer
+                </p></a
               >
             </section>
 
-            <div onclick="hideMyComments()" class="comment-show">
+            <div onclick="hideMyComments()" class="comment-show"></div>
+            <div class="hiding-comment-show">
               <div class="comment-img">
-                <img src="https://picsum.photos/seed/picsum/800/500" alt="" />
+                <img src="https://picsum.photos/seed/picsum/500/500" alt="" />
               </div>
               <section class="comment-section">
                 <div class="top-comment">
                   <img src="https://picsum.photos/seed/picsum/50/50" alt="" />
                   <p class="top-comment-username">Username001</p>
-                  <i class="fa-solid fa-ellipsis"></i>
+                  <i id="top-comment-ellipsis" class="fa-solid fa-ellipsis"></i>
                 </div>
                 <div class="comment-feed">
                   <img src="https://picsum.photos/seed/picsum/50/50" alt="" />
@@ -722,7 +731,7 @@
         </div>
       </section>
     </section>
-    <div class="plane-empty" onclick="faPaperHide()"></div>
+    <div id="overflowHidden" class="plane-empty" onclick="faPaperHide()"></div>
     <div class="fapaper-container">
       <div class="fapaper-plane">
         <section class="fapaper-top">
