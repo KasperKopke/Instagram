@@ -125,7 +125,7 @@ a {
 
 .main-feed {
   grid-area: header;
-  margin-left: 46.5%;
+  margin-left: 47%;
 }
 .main-feed2 {
   grid-area: header2;
@@ -318,7 +318,7 @@ a {
   display: flex;
   position: relative;
   flex-direction: row;
-  bottom: 815px;
+  bottom: 780px;
   right: 75%;
   max-width: 100%;
   min-height: 100%;
@@ -580,7 +580,7 @@ a {
   align-items: center;
   justify-content: center;
   position: relative;
-  bottom: 910px;
+  bottom: 850px;
   right: 65%;
   z-index: 2;
 }
