@@ -318,7 +318,7 @@ a {
   display: flex;
   position: relative;
   flex-direction: row;
-  bottom: 750px;
+  bottom: 815px;
   right: 75%;
   max-width: 100%;
   min-height: 100%;
@@ -575,12 +575,13 @@ a {
   display: flex;
   flex-direction: row;
   width: 1300px;
+  height: 800px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   position: relative;
-  bottom: 880px;
-  right: 60%;
+  bottom: 910px;
+  right: 65%;
   z-index: 2;
 }
 
@@ -592,7 +593,7 @@ a {
   display: block;
   position: absolute;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   background-color: rgb(0, 0, 0, 0.6);
   bottom: 1px;
   right: 1px;
@@ -604,16 +605,16 @@ a {
 }
 
 .comment-img img {
-  border-top: 50px solid black;
+  border-top: 14px solid black;
   width: 100%;
   margin-right: 250px;
-  border-bottom: 70px solid black;
+  border-bottom: 15px solid black;
 }
 .comment-section {
   background: white;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 .top-comment-username {
   margin-right: 20px;
